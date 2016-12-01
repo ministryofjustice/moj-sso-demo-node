@@ -1,0 +1,28 @@
+{
+  "name": "moj-sso-demo-node",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./app/bin/www",
+    "test": "node_modules/.bin/standard && node_modules/.bin/mocha -u exports test/unit/**/*"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "debug": "~2.2.0",
+    "express": "^4.13.4",
+    "morgan": "~1.7.0",
+    "pug": "^2.0.0-beta6",
+    "request": "^2.78.0",
+    "request-promise": "^4.1.1",
+    "simple-oauth2": "^1.0.0"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "proxyquire": "^1.7.10",
+    "sinon": "^1.17.5",
+    "standard": "^8.0.0",
+    "supertest": "^2.0.0"
+  }
+}
