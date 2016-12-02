@@ -5,5 +5,6 @@ module.exports = {
   TOKEN_PATH: process.env.TOKEN_PATH || '/oauth/token',
   AUTHORIZE_PATH: process.env.AUTHORIZE_PATH || '/oauth/authorize',
   REDIRECT_URI: process.env.REDIRECT_URI || 'https://moj-sso-demo-node.herokuapp.com/auth/mojsso/callback',
-  USER_DETAILS_PATH: process.env.USER_DETAILS_PATH || '/api/user_details'
+  USER_DETAILS_PATH: process.env.USER_DETAILS_PATH || '/api/user_details',
+  LOGOUT_PATH: process.env.LOGOUT_PATH || '/users/sign_out'
 }

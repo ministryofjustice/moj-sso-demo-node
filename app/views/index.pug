@@ -1,6 +1,9 @@
 extends layout
 
 block content
-  a(href='/login') Login
+  if logoutUrl == undefined
+    a(href='/login') Login
+  else
+    a(href=logoutUrl) Logout
 
   p= message

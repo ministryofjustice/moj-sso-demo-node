@@ -61,7 +61,8 @@ module.exports = function (app) {
 
       requestPromise(options)
         .then(function (userDetails) {
-          return res.render('index', { title: 'Login', message: JSON.stringify(userDetails, null, 2) })
+          var logoutUrl = `${config.TOKEN_HOST}${config.LOGOUT_PATH}`
+          return res.render('index', { title: 'Login', message: JSON.stringify(userDetails, null, 2), logoutUrl: logoutUrl })
         })
         .catch(function (error) {
           // API call to get user details failed...
