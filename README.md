@@ -7,8 +7,8 @@ A demonstration integration with [Ministry of Justice Sign On](https://github.co
 This demo
 
 * uses the `simple-oauth2` module to handle the OAuth flows
-* stores the user's id and info in the session
-* implements the optional logout redirection back to this app
+* displays the users details and authorisations from SSO
+* displays a logout link to log the user out of SSO
 
 ## Usage instructions
 
@@ -30,4 +30,4 @@ npm start
 
 ## Notes
 
-This implementation is deliberately simple to show the full OAuth flow, for a full implementation you should consider using a module like [passport](https://www.npmjs.com/package/passport) with [passport-oauth2](https://www.npmjs.com/package/passport-oauth2) which will handle retrieving the access token automatically for you.
+This implementation is deliberately simple to show the full OAuth flow, for a full implementation including session management you should consider using a module like [passport](https://www.npmjs.com/package/passport) with [passport-oauth2](https://www.npmjs.com/package/passport-oauth2) and [express-session](https://www.npmjs.com/package/express-session) which will handle retrieving the access token automatically for you.
